@@ -1,0 +1,15 @@
+n = 100
+list = [i for i in range(n)]
+def BinSearch(list, item):
+  low = 0
+  high = (len(list)-1)
+  while (low <= high):
+    mid = ((low + high)/2)
+    guess = list[mid]
+    if ((int(guess[-1]))**2 == n):
+      print("Root is " + str(guess[-1]))
+    if guess > item:
+      high = mid - 1
+    else:
+      low = mid + 1
+  return None
