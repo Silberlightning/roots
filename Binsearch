@@ -3,7 +3,7 @@ def BinSearch(n):
   mid = 0
   high = n
   while (low <= high):
-    mid = ((low + high)// 2)
+    mid = float((low + high)/ 2)
     if (n == (mid**2)) :
       item = mid
       return item
