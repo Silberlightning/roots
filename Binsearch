@@ -1,8 +1,7 @@
 def BinSearch(n):
-  list = [i for i in range(1, n + 1)]
   low = 1
   mid = 0
-  high = len(list)
+  high = n
   while (low <= high):
     mid = ((low + high)// 2)
     if (n == (mid**2)) :
@@ -14,4 +13,5 @@ def BinSearch(n):
       low = mid
     if ((high - low) == 1) :
       return ("Square root of " + str(n) + " is not an integer")
+n = 225
 print(BinSearch(n))
